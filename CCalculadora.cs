@@ -10,7 +10,13 @@ namespace Segundo
      class CCalculadora
     {
         private double respuesta;
-        public double FCalcular(double[] decision2)
+        private double[] decision2= new double[3];
+        public void set_decision2(double[] pDecision2) 
+        {
+            decision2=pDecision2;
+            FCalcular();
+        }
+        private void FCalcular()
         {
             switch (decision2[0]) 
             {
@@ -30,6 +36,10 @@ namespace Segundo
             }
 
 
+            
+        }
+        public double get_decision2() 
+        {
             return respuesta;
         }
     }

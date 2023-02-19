@@ -30,7 +30,8 @@ namespace Segundo
                     datos[1] = numero1;
                     
                     datos[2] = numero2;
-                    resultado = calculador1.FCalcular(datos);
+                    calculador1.set_decision2(datos);
+                    resultado = calculador1.get_decision2();
                     Console.WriteLine($"El resultado es : {resultado}");
                 }
             } while (opcion<5);
